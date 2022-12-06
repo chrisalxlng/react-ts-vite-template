@@ -1,0 +1,34 @@
+{
+  "React Component (.tsx)": {
+    "isFileTemplate": true,
+    "scope": "typescriptreact",
+    "prefix": "rc",
+    "body": [
+      "export const ${1:$TM_FILENAME_BASE} = () => {",
+      "\tconsole.log('${1:$TM_FILENAME_BASE} component');",
+      "",
+      "\treturn <></>;",
+      "};",
+      ""
+    ],
+    "description": "Create React Component"
+  },
+  "React Component with Props (.tsx)": {
+    "isFileTemplate": true,
+    "scope": "typescriptreact",
+    "prefix": "rcp",
+    "body": [
+      "type ${3:$TM_FILENAME_BASE}Props = {",
+      "\t${1:propTitle}: ${2:propType};",
+      "};",
+      "",
+      "export const ${3:$TM_FILENAME_BASE} = ({ ${1:propTitle} }: ${3:$TM_FILENAME_BASE}Props) => {",
+      "\tconsole.log('${3:$TM_FILENAME_BASE} component');",
+      "",
+      "\treturn <></>;",
+      "};",
+      ""
+    ],
+    "description": "Create React Component with Props"
+  }
+}
